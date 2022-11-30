@@ -5,10 +5,10 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 //ejecutar express
-var app = express('express');
+var app = express();
 
 //cargar archivos de rutas
-var user_routes =require('../routes/users')
+var user_routes = require('../routes/users')
 
 //middlewares
 app.use(bodyParser.urlencoded({extended: false}));
